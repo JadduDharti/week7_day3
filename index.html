@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>F1 Racer API Table</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="js/main.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center mb-4">F1 Racer API Table</h1>
+		<form class="mb-4">
+			<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="season">Season:</label>
+					<input type="number" id="season" name="season" class="form-control">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="round">Round:</label>
+					<input type="number" id="round" name="round" class="form-control">
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+		<div class="table-responsive">
+			<table class="table table-hover table-dark">
+				<thead>
+					<tr>
+						<th>Position</th>
+						<th>Driver</th>
+						<th>Nationality</th>
+						<th>Points</th>
+					</tr>
+				</thead>
+				<tbody id="table-body"></tbody>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
